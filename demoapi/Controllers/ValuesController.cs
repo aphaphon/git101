@@ -24,6 +24,13 @@ namespace demoapi.Controllers
             return "value";
         }
 
+        // GET api/values/5
+        [HttpGet("{id}/{name}")]
+        public ActionResult<string> Get(int id, string name)
+        {
+            return "value";
+        }
+
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)
